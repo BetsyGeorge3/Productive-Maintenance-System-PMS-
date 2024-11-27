@@ -49,7 +49,7 @@ Run the preprocessing script to clean and normalize the data:
 
 python
 Copy code
-python preprocessing.py
+preprocessing.py
 This script:
 
 Normalizes data using MinMaxScaler.
@@ -60,7 +60,7 @@ Generate derived features using the feature engineering script:
 
 python
 Copy code
-python feature_engineering.py
+feature engineering.py
 This script:
 
 Adds trend, deviation, and moving average features.
@@ -70,7 +70,7 @@ Train the LSTM model using the training script:
 
 python
 Copy code
-python model_training.py
+ModelTraining.py
 This script:
 
 Trains an LSTM model on the feature-engineered dataset.
@@ -80,7 +80,7 @@ Evaluate the model's performance on the test set:
 
 python
 Copy code
-python model_evaluation.py
+Evaluation.py
 This script:
 
 Validates the model using metrics like confusion matrix, precision, and recall.
@@ -91,11 +91,11 @@ Deploy the trained model on a cloud platform using cloud-specific tools:
 For AWS Lambda, package the deployment script and model into a ZIP file and upload it.
 For Azure Functions, upload the script and configure the function to handle HTTP triggers.
 Files and Scripts
-preprocessing.py: Cleans and normalizes sensor data.
-feature_engineering.py: Adds derived features.
-model_training.py: Trains and saves the LSTM model.
-model_evaluation.py: Evaluates the model and plots results.
-deployment_lambda.py: Example deployment script for AWS Lambda.
+datapreprocessing.py: Cleans and normalizes sensor data.
+feature engineering.py: Adds derived features.
+ModelTraining.py: Trains and saves the LSTM model.
+Evaluation.py: Evaluates the model and plots results.
+deployVibra.py: Example deployment script for AWS Lambda.
 Results and Outputs
 Model Accuracy: Accuracy, recall, precision, and F1 scores.
 Predictions: Failure probabilities for real-time data.
